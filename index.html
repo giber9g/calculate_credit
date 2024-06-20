@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Calculator credit</title>
+</head>
+<body>
+    <!-- <div class="navbar" id="navbarr">
+        <h1>Calculate credit</h1>
+        <ul>
+            <li><p>sum credit:</p><input id="amount" type="number" onchange="calc()"></li>
+            <li><p>procent credit:</p><input id="interest" type="number" step="0.01" onchange="calc()"></li>
+            <li><p>credit term:</p><input id="years" type="number" onchange="calc()"></li>
+        </ul>
+        <button type="submit">Calculate</button>
+        <h2 class="result">Info: <p id="results" ></p></h2>
+    </div> -->
+<div class="navbar">
+    <h1>Кредитный калькулятор</h1>
+    <!-- Форма кредитного калькулятора -->
+    <form id="navbar">
+        <p>Sum credit:</p>
+        <div class="nn">
+        <input type="number" id="amount" required />
+    
+        <p>Procent credit:</p>
+        <input type="number" step="0.01" id="interest" placeholder="Введите процентную ставку" required />
+    
+        <p>Credit term:</p>
+        <input type="number" id="years" placeholder="Введите срок погашения в годах" required />
+    
+        <input type="submit" value="Рассчитать" class="button">
+    </div>
+    </form>
+    
+    <!-- Раздел результатов кредитного калькулятора -->
+    <div id="results" class="result"></div>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
